@@ -8,9 +8,9 @@
         FILTER_VALIDATE_INT);
     $datetime = date('m/d/Y');
     // validate investment
-    if ($investment === FALSE && $investment != '') {
+    if ($investment === FALSE || $investment != '') {
         $error_message = 'Investment must be a valid number.'; 
-    } else if ( $investment <= 0 && $investment != '') {
+    } else if ( $investment <= 0 || $investment != '') {
         $error_message = 'Investment must be greater than zero.'; 
     // validate interest rate
     } else if ( $interest_rate === FALSE )  {
