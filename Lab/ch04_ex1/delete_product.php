@@ -17,3 +17,4 @@ if ($product_id != false && $category_id != false) {
 
 // Display the Product List page
 include('index.php');
+?>
